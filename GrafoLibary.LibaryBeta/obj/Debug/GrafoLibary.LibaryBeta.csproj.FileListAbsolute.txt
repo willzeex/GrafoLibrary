@@ -1,0 +1,5 @@
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.LibaryBeta\bin\Debug\GrafoLibary.LibaryBeta.dll
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.LibaryBeta\bin\Debug\GrafoLibary.LibaryBeta.pdb
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.LibaryBeta\obj\Debug\GrafoLibary.LibaryBeta.csprojResolveAssemblyReference.cache
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.LibaryBeta\obj\Debug\GrafoLibary.LibaryBeta.dll
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.LibaryBeta\obj\Debug\GrafoLibary.LibaryBeta.pdb

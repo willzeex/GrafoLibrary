@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .visible {
+        display: inherit;
+    }
+
+    .none {
+        display: none;
+    }
+</style>
+
+<div class="row" style="margin-top: 35px;">
+    <div class="col-md-3">
+        @using (Html.BeginForm("FileUpload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <h2>Upload do Grafo</h2>
+            <div class="form-group">
+                <input type="file" name="name" value=" " />
+            </div>
+            <p><button class="btn btn-primary">Carregar Arquivo</button></p>
+        }
+
+        <p><button class="btn btn-primary none" id="btnExecutar">Executar Grafo</button></p>
+    </div>
+    <div class="col-md-9">
+        <h2>Resultados</h2>
+        <div class="row" data-bind="foreach: Respostas">
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <h4 data-bind="text: Titulo"></h4>
+                    <ul class="nav nav-stacked" data-bind="foreach: Linhas">
+                        <li><h4 data-bind="text: TextoLinha"></h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $("#btnExecutar").click(function () {
+            $.ajax({
+                type: 'POST',
+                url: '/Home/ExecutaGrafo',
+                async: true,
+                cache: false,
+                datatype: 'json',
+                success: function (data) {
+                    var viewModel = new ViewModel(data);
+                    ko.applyBindings(viewModel);
+                }
+            });
+        });
+
+        function ViewModel(valor) {
+            this.Respostas = valor;
+        };
+
+        $(function () {
+            var classe = '@ViewData["isUploaded"]';
+            if (classe === "visible") {
+                $("#btnExecutar").removeClass("none");
+                $("#btnExecutar").addClass(classe);
+            }
+        });
+    </script>
+}

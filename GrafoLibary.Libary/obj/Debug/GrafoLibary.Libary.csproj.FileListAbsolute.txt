@@ -1,0 +1,4 @@
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.Libary\bin\Debug\GrafoLibary.Libary.dll
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.Libary\bin\Debug\GrafoLibary.Libary.pdb
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.Libary\obj\Debug\GrafoLibary.Libary.dll
+D:\Cursos\Faculdade\Projetos\Biblioteca de Grafos\GrafoLibary\GrafoLibary.Libary\obj\Debug\GrafoLibary.Libary.pdb
