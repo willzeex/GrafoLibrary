@@ -49,6 +49,11 @@ namespace GrafoLibary.UI.Controllers
             return View("Index");
         }
 
+        public ActionResult Api()
+        {
+            return View();
+        }
+
         public JsonResult ExecutaGrafo()
         {
             List<Resposta> respostas = Algoritimos.ExecutaComandos(Server.MapPath("~/Content/Upload/grafo-teste-1.txt"));
